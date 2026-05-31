@@ -65,7 +65,7 @@ function svg() {
     c.w.forEach((w, i) => {
       if (!w) return;
 
-      //in - out
+      //in -out
       if (c.x === 0 && c.y === 0 && i === 0) return;
       if (c.x === cols - 1 && c.y === rows - 1 && i === 1) return;
 
@@ -88,7 +88,7 @@ function render() {
   document.getElementById("maze").innerHTML = svgContent;
 }
 
-function generatemaze() {
+function generateMaze() {
   generate();
   render();
 }
@@ -101,4 +101,4 @@ function downloadSVG() {
   a.click();
 }
 
-generatemaze();
+generateMaze();
